@@ -49,13 +49,11 @@ def Menu(difficult, trycount):
 
     def Loop(trycount):
         guesnum = create_randdom_number()
-        print(guesnum)
         try_again = False
         while True:
             try:
                 if try_again:
                     guesnum = create_randdom_number()
-                    print(guesnum)
                     try_again = False
                     continue
                 TRY = int(input(f"(-2: to help) [try: {trycount}] guess number {difficultG}: "))
